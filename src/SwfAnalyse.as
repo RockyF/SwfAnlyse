@@ -43,20 +43,14 @@ public class SwfAnalyse extends Sprite {
 		var len:uint = b0 >> 3;
 		var restLength:uint = 3;
 		trace("rect length:", len);
-		var bits:uint = b0 << restLength;
-		for(var i:int = 0; i < 4; i++){
-			var needBitCount:int = len - restLength;
-			var needByteCount:int = Math.ceil(needBitCount / 2);
-			for(var j:int = 0; j < needByteCount; j ++){
-				b0 = restBytes.readByte();
-				bits = bits << 8;
-				bits += b0 >> 8;
-			}
-			if(restLength < 8){
-				b0 = restBytes.readByte();
-				restLength += 8;
-			}
-		}
+		var needByteCount:int = Math.ceil((len * 4 - restLength) / 8);
+		restBytes.readUTFBytes(needByteCount);
+
+		var frameRate:uint = restBytes.readUnsignedShort();
+		trace("frame rate:", frameRate);
+
+		var frameCount:uint = restBytes.readUnsignedShort();
+		trace("frameCount:", frameCount);
 	}
 }
 }
