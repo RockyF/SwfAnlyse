@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5e103f0e-e922-43c3-af79-0132e5eb367f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SwfAnalyse.as" afterPath="$PROJECT_DIR$/src/SwfAnalyse.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SwfAnlyse.iws" />
@@ -72,9 +70,11 @@
       <file leaf-file-name="SwfAnalyse.as" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SwfAnalyse.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="42" selection-start="1335" selection-end="1335" vertical-scroll-proportion="0.27272728" vertical-offset="646" max-vertical-offset="976">
+            <state line="139" column="27" selection-start="3621" selection-end="3621" vertical-scroll-proportion="0.8172043" vertical-offset="240" max-vertical-offset="896">
               <folding>
                 <element signature="e#11#39#0" expanded="true" />
+                <element signature="n#!!block;n#doAnalyse#0;n#SwfAnalyse#0;n#!!top" expanded="false" />
+                <element signature="n#!!block;n#analyseSWF#0;n#SwfAnalyse#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -135,7 +135,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -170,6 +169,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -344,10 +344,6 @@
       <option name="usbDebugPort" value="7936" />
       <method />
     </configuration>
-    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <TestRunner />
-      <method />
-    </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -368,6 +364,10 @@
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
     <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" output_log_level="null" package_name="" scope="Class">
       <option name="BCName" value="" />
       <option name="launcherParameters">
@@ -380,25 +380,6 @@
       </option>
       <option name="moduleName" value="" />
       <option name="trusted" value="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="myFilePath" />
-      <option name="GLUE" />
-      <option name="myNameFilter" />
-      <option name="myGeneratedName" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="GoTestConfiguration" factoryName="Go Test">
@@ -420,6 +401,25 @@
       <option name="testBeforeBenchmark" value="false" />
       <option name="goVetEnabled" value="false" />
       <module name="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -490,7 +490,9 @@
       <option name="url" value="http://" />
       <option name="usbDebugPort" value="7936" />
       <RunnerSettings RunnerId="FlexDebugRunner" />
+      <RunnerSettings RunnerId="FlexRunner" />
       <ConfigurationWrapper RunnerId="FlexDebugRunner" />
+      <ConfigurationWrapper RunnerId="FlexRunner" />
       <method />
     </configuration>
     <list size="1">
@@ -526,12 +528,22 @@
       <created>1400916069983</created>
       <updated>1400916069983</updated>
       <workItem from="1400916075756" duration="610000" />
-      <workItem from="1400916943135" duration="8376000" />
+      <workItem from="1400916943135" duration="8412000" />
+      <workItem from="1401067893011" duration="260000" />
+      <workItem from="1401068396590" duration="6576000" />
+      <workItem from="1401169111155" duration="594000" />
+      <workItem from="1401272107798" duration="82000" />
+      <workItem from="1402480489880" duration="911000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit&#10;">
+      <created>1400926634294</created>
+      <updated>1400926634294</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8986000" />
+    <option name="totallyTimeSpent" value="17445000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -544,24 +556,24 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42689076" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -577,17 +589,12 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="Initial commit&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="flex">
-          <url>file://$PROJECT_DIR$/src/SwfAnalyse.as</url>
-          <line>52</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="7" />
+      <option name="time" value="9" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -597,18 +604,73 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/SwfAnalyse.as">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="37" selection-start="1065" selection-end="1065" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="976">
+          <folding>
+            <element signature="e#11#39#0" expanded="true" />
+            <element signature="n#!!block;n#doAnalyse#0;n#SwfAnalyse#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#analyseSWF#0;n#SwfAnalyse#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SwfAnalyse.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="14" selection-start="1104" selection-end="1104" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="976">
+          <folding>
+            <element signature="e#11#39#0" expanded="true" />
+            <element signature="n#!!block;n#doAnalyse#0;n#SwfAnalyse#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#analyseSWF#0;n#SwfAnalyse#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SwfAnalyse.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="14" selection-start="1030" selection-end="1030" vertical-scroll-proportion="0.0" vertical-offset="488" max-vertical-offset="976">
+          <folding>
+            <element signature="e#11#39#0" expanded="true" />
+            <element signature="n#!!block;n#doAnalyse#0;n#SwfAnalyse#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#analyseSWF#0;n#SwfAnalyse#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SwfAnalyse.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="37" selection-start="1517" selection-end="1517" vertical-scroll-proportion="0.0" vertical-offset="646" max-vertical-offset="976">
+          <folding>
+            <element signature="e#11#39#0" expanded="true" />
+            <element signature="n#!!block;n#doAnalyse#0;n#SwfAnalyse#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#analyseSWF#0;n#SwfAnalyse#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SwfAnalyse.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="31" selection-start="1229" selection-end="1229" vertical-scroll-proportion="0.0" vertical-offset="646" max-vertical-offset="976">
+          <folding>
+            <element signature="e#11#39#0" expanded="true" />
+            <element signature="n#!!block;n#doAnalyse#0;n#SwfAnalyse#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#analyseSWF#0;n#SwfAnalyse#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SwfAnalyse.as">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="37" selection-start="132" selection-end="132" vertical-scroll-proportion="0.0" vertical-offset="80" max-vertical-offset="496">
           <folding>
             <element signature="e#11#39#0" expanded="true" />
+            <element signature="n#!!block;n#doAnalyse#0;n#SwfAnalyse#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#analyseSWF#0;n#SwfAnalyse#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/swf/test.swf">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="25" selection-start="79" selection-end="79" vertical-scroll-proportion="0.08450704" vertical-offset="0" max-vertical-offset="568">
-          <folding />
-        </state>
+        <state line="3" column="25" selection-start="79" selection-end="79" vertical-scroll-proportion="0.08450704" vertical-offset="0" max-vertical-offset="568" />
       </provider>
     </entry>
     <entry file="jar://F:/Program Files/Adobe/Adobe Flash Builder 4.6/sdks/4.6.0/frameworks/libs/air/airglobal.swc!/library.swf">
@@ -620,9 +682,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SwfAnalyse.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="42" selection-start="1335" selection-end="1335" vertical-scroll-proportion="0.27272728" vertical-offset="646" max-vertical-offset="976">
+        <state line="139" column="27" selection-start="3621" selection-end="3621" vertical-scroll-proportion="0.8172043" vertical-offset="240" max-vertical-offset="896">
           <folding>
             <element signature="e#11#39#0" expanded="true" />
+            <element signature="n#!!block;n#doAnalyse#0;n#SwfAnalyse#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#analyseSWF#0;n#SwfAnalyse#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
